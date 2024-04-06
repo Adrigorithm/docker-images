@@ -14,8 +14,9 @@ Run a container while you're in the `<path>` using the command `docker run --rm 
 - <path> is the absolute path to where your songs.txt is saved (songs/ in image below)
 - <imageid> is the id of the docker image
 
-`songs.txt` is a file that is just a list of song urls separated by a space (for example: https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak?si=9de012e511e74932 https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn?si=b8fb064825a14682 https://open.spotify.com/track/5xv4ggemGPNpowZAMwEYHH?si=040a2f48a469458e). 
-![Working directory (image already includes output of the container)](https://github.com/Adrigorithm/docker-images/assets/12832161/eb68e41a-90de-47c7-be0a-224a0dda2dff)
+[Working directory](image already includes output of the container)](https://github.com/Adrigorithm/docker-images/assets/12832161/eb68e41a-90de-47c7-be0a-224a0dda2dff)
+
+`songs.txt` is a file that is just a list of song urls separated by a space (for example: https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak?si=9de012e511e74932 https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn?si=b8fb064825a14682 https://open.spotify.com/track/5xv4ggemGPNpowZAMwEYHH?si=040a2f48a469458e).
 
 The exact command that was used in the image is `docker run --rm -v C:\Users\DKnig\Documents\Dockerfiles\spotdl\songs:/spotdl 0196292b7e8e808e089037730b899bf79b5da5a187491c90e57be0ef08f67eb1` while working dir was `C:\Users\DKnig\Documents\Dockerfiles\spotdl\songs`
 
