@@ -14,7 +14,7 @@ Run a container while you're in the `<path>` using the command `docker run --rm 
 - <path> is the absolute path to where your songs.txt is saved (songs/ in image below - image already includes output of the container)
 - <imageid> is the id of the docker image
 
-[Working directory](https://github.com/Adrigorithm/docker-images/assets/12832161/eb68e41a-90de-47c7-be0a-224a0dda2dff)
+![Working directory](https://github.com/Adrigorithm/docker-images/assets/12832161/eb68e41a-90de-47c7-be0a-224a0dda2dff)
 
 `songs.txt` is a file that is just a list of song urls separated by a space (for example: https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak?si=9de012e511e74932 https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn?si=b8fb064825a14682 https://open.spotify.com/track/5xv4ggemGPNpowZAMwEYHH?si=040a2f48a469458e).
 
