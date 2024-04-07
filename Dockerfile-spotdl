@@ -1,6 +1,5 @@
-FROM python:3.11.9-alpine3.19
+FROM python:3
 WORKDIR /spotdl
 RUN pip install spotdl
 RUN spotdl --download-ffmpeg
-COPY songs.txt ./songs.txt
 CMD sh -c 'spotdl download $(cat songs.txt)'
