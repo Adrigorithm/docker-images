@@ -10,7 +10,7 @@ NixOS. I do not understand how it works yet.
 This images is intended for remote development meaning that you shouldn't need to install anything except VS Code (or [Neo]Vim if you know what you're doing). Using plugins you can connect to the filesystem of the container and create your projects within.
 
 ### spotdl
-Run a container while you're in the `<path>` using the command `docker run --rm -v <path>:/spotdl <imageid>` where:
+Run a container using the command `docker run --rm -v <path>:/spotdl <imageid>` where:
 - <path> is the absolute path to where your songs.txt is saved (songs/ in image below - image already includes output of the container)
 - <imageid> is the id of the docker image
 
@@ -18,7 +18,7 @@ Run a container while you're in the `<path>` using the command `docker run --rm 
 
 `songs.txt` is a file that is just a list of song urls separated by a space (for example: https://open.spotify.com/track/6I9VzXrHxO9rA9A5euc8Ak?si=9de012e511e74932 https://open.spotify.com/track/0SiywuOBRcynK0uKGWdCnn?si=b8fb064825a14682 https://open.spotify.com/track/5xv4ggemGPNpowZAMwEYHH?si=040a2f48a469458e).
 
-The exact command that was used in the image is `docker run --rm -v C:\Users\DKnig\Documents\Dockerfiles\spotdl\songs:/spotdl 0196292b7e8e808e089037730b899bf79b5da5a187491c90e57be0ef08f67eb1` while working dir was `C:\Users\DKnig\Documents\Dockerfiles\spotdl\songs`
+The exact command that was used in the image is `docker run --rm -v C:\Users\DKnig\Documents\Dockerfiles\spotdl\songs:/spotdl 0196292b7e8e808e089037730b899bf79b5da5a187491c90e57be0ef08f67eb1`
 
 All credits go to the official developers of [spotDL](https://github.com/spotDL/spotify-downloader)
 
