@@ -1,0 +1,17 @@
+# Use the official Debian image as the base
+FROM debian:latest
+
+# Install git and other dependencies
+RUN apt-get update && apt-get install -y git build-essential sudo gcc-multilib python3 vim
+
+# Clone the git repository
+RUN git clone https://github.com/lowlevellearning/secure-server-stuff.git
+
+# Change the working directory
+WORKDIR secure-server-stuff
+
+# Build and enable debug logging
+RUN gcc -g -o hacked hacked.c secrets.c -fno-stack-protector -m32 -no-pie
+
+# Prevent container from committing suicide
+ENTRYPOINT ["tail", "-f", "/dev/null"]
