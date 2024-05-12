@@ -23,9 +23,15 @@ The exact command that was used in the image is `docker run --rm -v C:\Users\DKn
 All credits go to the official developers of [spotDL](https://github.com/spotDL/spotify-downloader)
 
 ### bufferOverflow
-Build it and attach to it like so:
-`docker run --name buffer_overflow <image>`
-`docker exec -it buffer_overflow`
+Build it and create a container:
+- `docker build .` (while in the directory with the Dockerfile)
+- `docker run -d --name buffer_overflow <sha256>`
+
+Starting after a container has been created is simple, just run it in the background:
+- `docker start buffer_overflow &`
+
+You can now connect to it:
+- `docker exec -it buffer_overflow`
 
 ## These images suck
 I know, but they work.
