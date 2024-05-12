@@ -31,7 +31,7 @@ Starting after a container has been created is simple, just run it in the backgr
 - `docker start buffer_overflow &`
 
 You can now connect to it:
-- `docker exec -it buffer_overflow`
+- `docker exec -it buffer_overflow /bin/bash`
 
 ## These images suck
 I know, but they work.
